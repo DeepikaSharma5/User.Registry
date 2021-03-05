@@ -1,0 +1,1 @@
+CREATE TABLE user (id int NOT NULL, name varchar(30), email varchar(40), PRIMARY KEY (id));
