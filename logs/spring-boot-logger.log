@@ -1,0 +1,30 @@
+2021-03-15 08:45:31,651 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 4209 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-15 08:45:31,654 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-15 08:45:31,655 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-15 08:45:33,377 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.433 seconds (JVM running for 4.416)
+2021-03-15 08:45:44,161 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Request received to get all users
+2021-03-15 08:45:44,240 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Users rendered from database successfully.
+2021-03-15 09:04:52,723 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 4795 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-15 09:04:52,727 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-15 09:04:52,728 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-15 09:04:54,665 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.42 seconds (JVM running for 3.339)
+2021-03-15 09:04:56,399 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-2] Request received to get all users
+2021-03-15 09:04:56,488 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-2] Users rendered from database successfully.
+2021-03-15 09:23:25,399 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 5400 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-15 09:23:25,402 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-15 09:23:25,403 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-15 09:23:27,215 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.211 seconds (JVM running for 2.989)
+2021-03-15 09:23:29,568 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Request received to get all users
+2021-03-15 09:23:29,648 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Users rendered from database successfully.
+2021-03-15 09:47:54,011 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 5876 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-15 09:47:54,019 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-15 09:47:54,020 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-15 09:47:56,006 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.42 seconds (JVM running for 3.964)
+2021-03-15 09:47:57,506 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Request received to get all users
+2021-03-15 09:47:57,592 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Users rendered from database successfully.
+2021-03-15 09:58:48,142 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 6112 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-15 09:58:48,145 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-15 09:58:48,146 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-15 09:58:49,952 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.248 seconds (JVM running for 3.129)
+2021-03-15 09:58:52,456 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Request received to get all users
+2021-03-15 09:58:52,525 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Users rendered from database successfully.

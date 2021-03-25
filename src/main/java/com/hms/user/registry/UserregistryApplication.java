@@ -19,29 +19,29 @@ import java.util.Objects;
 @PropertySource("classpath:application.properties")
 public class UserregistryApplication {
 
-   @Autowired
+    @Autowired
     Environment environment;
 
-   private final String URL = "spring.datasource.url";
-   private final String USER = "spring.datasource.username";
-   private final String DRIVER = "spring.datasource.driver-class-name";
-   private final String PASSWORD = "spring.datasource.password";
+    private final String URL = "spring.datasource.url";
+    private final String USER = "spring.datasource.username";
+    private final String DRIVER = "spring.datasource.driver-class-name";
+    private final String PASSWORD = "spring.datasource.password";
 
-   @Bean
-    DataSource dataSource(){
-       DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-       driverManagerDataSource.setUrl(environment.getProperty(URL));
-       driverManagerDataSource.setUsername(environment.getProperty(USER));
-       driverManagerDataSource.setPassword(environment.getProperty(PASSWORD));
-       driverManagerDataSource.setDriverClassName(Objects.requireNonNull(environment.getProperty(DRIVER)));
+    @Bean
+    DataSource dataSource() {
+        DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
+        driverManagerDataSource.setUrl(environment.getProperty(URL));
+        driverManagerDataSource.setUsername(environment.getProperty(USER));
+        driverManagerDataSource.setPassword(environment.getProperty(PASSWORD));
+        driverManagerDataSource.setDriverClassName(Objects.requireNonNull(environment.getProperty(DRIVER)));
 
-       return driverManagerDataSource;
-   }
+        return driverManagerDataSource;
+    }
 
-   @Bean
-    JdbcTemplate jdbcTemplate(){
-       return new JdbcTemplate(dataSource());
-   }
+    @Bean
+    JdbcTemplate jdbcTemplate() {
+        return new JdbcTemplate(dataSource());
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(UserregistryApplication.class, args);

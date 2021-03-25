@@ -1,0 +1,37 @@
+2021-03-09 08:40:49,144 INFO com.hms.user.registry.UserregistryApplication [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 4087 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-09 08:40:49,146 DEBUG com.hms.user.registry.UserregistryApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-09 08:40:49,147 INFO com.hms.user.registry.UserregistryApplication [main] No active profile set, falling back to default profiles: default
+2021-03-09 08:40:51,155 INFO com.hms.user.registry.UserregistryApplication [main] Started UserregistryApplication in 2.447 seconds (JVM running for 3.796)
+2021-03-09 08:41:08,792 INFO com.hms.user.registry.UserregistryApplication [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 4187 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-09 08:41:08,793 DEBUG com.hms.user.registry.UserregistryApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-09 08:41:08,794 INFO com.hms.user.registry.UserregistryApplication [main] No active profile set, falling back to default profiles: default
+2021-03-09 08:41:10,383 INFO com.hms.user.registry.UserregistryApplication [main] Started UserregistryApplication in 2.088 seconds (JVM running for 3.785)
+2021-03-09 08:42:14,386 INFO com.hms.user.registry.service.UserService [http-nio-8080-exec-3] Users found in the database.
+2021-03-09 08:42:27,980 INFO com.hms.user.registry.service.UserService [http-nio-8080-exec-4] Deleted the user with the id 0
+2021-03-09 08:42:43,031 INFO com.hms.user.registry.service.UserService [http-nio-8080-exec-5] Users found in the database.
+2021-03-09 08:43:15,185 INFO com.hms.user.registry.UserregistryApplication [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 4736 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-09 08:43:15,187 DEBUG com.hms.user.registry.UserregistryApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-09 08:43:15,187 INFO com.hms.user.registry.UserregistryApplication [main] No active profile set, falling back to default profiles: default
+2021-03-09 08:43:16,836 INFO com.hms.user.registry.UserregistryApplication [main] Started UserregistryApplication in 1.985 seconds (JVM running for 2.994)
+2021-03-09 08:44:14,341 INFO com.hms.user.registry.UserregistryApplication [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 4854 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-09 08:44:14,343 DEBUG com.hms.user.registry.UserregistryApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-09 08:44:14,344 INFO com.hms.user.registry.UserregistryApplication [main] No active profile set, falling back to default profiles: default
+2021-03-09 08:44:16,331 INFO com.hms.user.registry.UserregistryApplication [main] Started UserregistryApplication in 2.336 seconds (JVM running for 3.249)
+2021-03-09 08:45:05,942 INFO com.hms.user.registry.UserregistryApplication [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 5029 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-09 08:45:05,944 DEBUG com.hms.user.registry.UserregistryApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-09 08:45:05,944 INFO com.hms.user.registry.UserregistryApplication [main] No active profile set, falling back to default profiles: default
+2021-03-09 08:45:07,655 INFO com.hms.user.registry.UserregistryApplication [main] Started UserregistryApplication in 2.052 seconds (JVM running for 2.849)
+2021-03-09 08:51:03,670 INFO com.hms.user.registry.UserregistryApplication [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 5383 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-09 08:51:03,671 DEBUG com.hms.user.registry.UserregistryApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-09 08:51:03,671 INFO com.hms.user.registry.UserregistryApplication [main] No active profile set, falling back to default profiles: default
+2021-03-09 08:51:05,319 INFO com.hms.user.registry.UserregistryApplication [main] Started UserregistryApplication in 2.081 seconds (JVM running for 2.948)
+2021-03-09 08:52:53,793 INFO com.hms.user.registry.UserregistryApplication [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 5636 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-09 08:52:53,795 DEBUG com.hms.user.registry.UserregistryApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-09 08:52:53,795 INFO com.hms.user.registry.UserregistryApplication [main] No active profile set, falling back to default profiles: default
+2021-03-09 08:52:55,631 INFO com.hms.user.registry.UserregistryApplication [main] Started UserregistryApplication in 2.279 seconds (JVM running for 3.056)
+2021-03-09 08:53:44,900 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-03-09 08:53:44,901 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2021-03-09 08:53:44,979 INFO com.hms.user.registry.service.UserService [http-nio-8080-exec-2] Created a user
+2021-03-09 08:54:08,018 INFO com.hms.user.registry.service.UserService [http-nio-8080-exec-3] Users found in the database.
+2021-03-09 08:54:33,694 INFO com.hms.user.registry.service.UserService [http-nio-8080-exec-4] Deleted the user with the id 8
+2021-03-09 08:54:52,280 INFO com.hms.user.registry.service.UserService [http-nio-8080-exec-5] Users found in the database.

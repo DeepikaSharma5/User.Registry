@@ -1,8 +1,21 @@
 package com.hms.user.registry.model;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 public class User {
+
+    @NotNull
     private Long id;
+
+    @NotNull
+    @NotEmpty
     private String name;
+
+    @NotNull
+    @NotEmpty
+    @Email(message = "Please enter a valid email address.")
     private String email;
 
     public User() {

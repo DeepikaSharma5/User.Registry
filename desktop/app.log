@@ -1,0 +1,5 @@
+2021-03-09 08:47:13,642 INFO com.hms.user.registry.UserregistryApplication [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 5204 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-09 08:47:13,644 DEBUG com.hms.user.registry.UserregistryApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-09 08:47:13,644 INFO com.hms.user.registry.UserregistryApplication [main] No active profile set, falling back to default profiles: default
+2021-03-09 08:47:15,319 INFO com.hms.user.registry.UserregistryApplication [main] Started UserregistryApplication in 2.017 seconds (JVM running for 3.056)
+2021-03-09 08:47:25,544 INFO com.hms.user.registry.service.UserService [http-nio-8080-exec-2] Users found in the database.

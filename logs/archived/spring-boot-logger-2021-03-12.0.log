@@ -1,0 +1,262 @@
+2021-03-12 08:16:17,441 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 2852 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-12 08:16:17,444 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-12 08:16:17,445 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-12 08:16:19,147 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.493 seconds (JVM running for 3.939)
+2021-03-12 08:27:03,572 ERROR com.hms.user.registry.service.UserService [http-nio-8080-exec-2] Error while getting user. 
+org.springframework.dao.EmptyResultDataAccessException: Incorrect result size: expected 1, actual 0
+	at org.springframework.dao.support.DataAccessUtils.nullableSingleResult(DataAccessUtils.java:97)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:887)
+	at com.hms.user.registry.DAO.UserDAOImpl.getUserById(UserDAOImpl.java:26)
+	at com.hms.user.registry.service.UserService.getUserById(UserService.java:34)
+	at com.hms.user.registry.controller.UserController.getUser(UserController.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-03-12 08:27:03,573 ERROR com.hms.user.registry.controller.UserController [http-nio-8080-exec-2] User with [ id: 15 ] is not exist.
+2021-03-12 08:43:57,191 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 4049 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-12 08:43:57,193 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-12 08:43:57,194 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-12 08:43:59,060 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.37 seconds (JVM running for 3.386)
+2021-03-12 08:44:06,115 ERROR com.hms.user.registry.service.UserService [http-nio-8080-exec-2] Error while getting user. 
+org.springframework.dao.EmptyResultDataAccessException: Incorrect result size: expected 1, actual 0
+	at org.springframework.dao.support.DataAccessUtils.nullableSingleResult(DataAccessUtils.java:97)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:887)
+	at com.hms.user.registry.DAO.UserDAOImpl.getUserById(UserDAOImpl.java:26)
+	at com.hms.user.registry.service.UserService.getUserById(UserService.java:34)
+	at com.hms.user.registry.controller.UserController.getUser(UserController.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-03-12 08:44:06,116 ERROR com.hms.user.registry.controller.UserController [http-nio-8080-exec-2] User with [ id: 15 ] is not exist.
+2021-03-12 08:44:24,879 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 4174 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-12 08:44:24,882 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-12 08:44:24,883 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-12 08:44:26,649 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.207 seconds (JVM running for 3.118)
+2021-03-12 08:44:32,453 ERROR com.hms.user.registry.service.UserService [http-nio-8080-exec-1] Error while getting user. 
+org.springframework.dao.EmptyResultDataAccessException: Incorrect result size: expected 1, actual 0
+	at org.springframework.dao.support.DataAccessUtils.nullableSingleResult(DataAccessUtils.java:97)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:887)
+	at com.hms.user.registry.DAO.UserDAOImpl.getUserById(UserDAOImpl.java:26)
+	at com.hms.user.registry.service.UserService.getUserById(UserService.java:34)
+	at com.hms.user.registry.controller.UserController.getUser(UserController.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-03-12 08:44:32,454 ERROR com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] User with [ id: 15 ] is not exist.
+2021-03-12 10:23:38,667 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 6039 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-12 10:23:38,671 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-12 10:23:38,672 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-12 10:23:40,727 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.494 seconds (JVM running for 3.294)
+2021-03-12 10:23:49,899 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Request received to get all users
+2021-03-12 10:23:49,974 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Users rendered from database successfully.
+2021-03-12 10:31:53,744 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-5] Request received to get user with [ id : 5 ].
+2021-03-12 10:31:53,810 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-5] User with [ id: 5 ] rendered from database successfully.
+2021-03-12 11:39:13,892 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 6965 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-12 11:39:13,895 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-12 11:39:13,896 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-12 11:39:15,532 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.075 seconds (JVM running for 3.052)
+2021-03-12 11:39:20,976 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-2] Request received to get all users
+2021-03-12 11:39:21,054 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-2] Users rendered from database successfully.
+2021-03-12 11:39:26,590 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-3] Request received to get user with [ id : 4 ].
+2021-03-12 11:39:26,653 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-3] User with [ id: 4 ] rendered from database successfully.
+2021-03-12 12:17:39,033 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 7398 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-12 12:17:39,035 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-12 12:17:39,036 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-12 12:17:40,739 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.179 seconds (JVM running for 3.125)
+2021-03-12 12:17:41,271 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Request received to get user with [ id : 4 ].
+2021-03-12 12:17:41,353 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] User with [ id: 4 ] rendered from database successfully.
+2021-03-12 12:17:47,868 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-3] Request received to get all users
+2021-03-12 12:17:47,953 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-3] Users rendered from database successfully.
+2021-03-12 12:37:34,925 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 7677 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-12 12:37:34,928 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-12 12:37:34,929 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-12 12:37:36,799 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.309 seconds (JVM running for 3.077)
+2021-03-12 12:37:38,678 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Request received to get all users
+2021-03-12 12:37:38,754 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Users rendered from database successfully.
+2021-03-12 12:37:42,708 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-4] Request received to get user with [ id : 3 ].
+2021-03-12 12:37:42,759 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-4] User with [ id: 3 ] rendered from database successfully.
+2021-03-12 13:04:33,845 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 8017 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-12 13:04:33,848 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-12 13:04:33,849 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-12 13:04:35,637 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.29 seconds (JVM running for 3.176)
+2021-03-12 13:04:37,418 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-2] Request received to get all users
+2021-03-12 13:04:37,491 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-2] Users rendered from database successfully.
+2021-03-12 13:04:50,192 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-3] Request received to get user with [ id : 6 ].
+2021-03-12 13:04:50,258 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-3] User with [ id: 6 ] rendered from database successfully.
+2021-03-12 13:05:01,058 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-4] Request received to add user [ name : Liyanage , email : liyanage123@gmail.com ].
+2021-03-12 13:05:01,059 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-4] User with [ id: 9 ] created successfully.
+2021-03-12 13:47:12,878 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 8507 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-12 13:47:12,896 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-12 13:47:12,897 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-12 13:47:14,733 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.282 seconds (JVM running for 3.135)
+2021-03-12 13:47:26,039 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-2] Request received to get all users
+2021-03-12 13:47:26,112 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-2] Users rendered from database successfully.
+2021-03-12 13:47:33,188 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-3] Request received to get user with [ id : 9 ].
+2021-03-12 13:47:33,255 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-3] User with [ id: 9 ] rendered from database successfully.
+2021-03-12 13:47:45,583 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-4] Request received to update user with [ id : 9 , name : Liyanage , email : liyanage@gmail.com ]
+2021-03-12 13:47:45,725 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-4] User with [ id: 9 ] updated successfully.
+2021-03-12 13:47:51,466 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-5] Request received to delete user with [ id : 9 ].
+2021-03-12 13:47:51,516 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-5] User with [ id: 9 ] deleted successfully.
+2021-03-12 17:12:23,981 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 10666 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-12 17:12:23,984 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-12 17:12:23,985 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-12 17:12:25,762 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.186 seconds (JVM running for 3.039)
+2021-03-12 17:12:34,248 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Request received to get all users
+2021-03-12 17:12:34,317 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-1] Users rendered from database successfully.
+2021-03-12 17:12:49,966 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-3] Request received to add user [ name : Liyanage , email : liyanage@gmail.com ].
+2021-03-12 17:12:49,966 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-3] User with [ id: 9 ] created successfully.
+2021-03-12 17:13:06,473 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-4] Request received to get user with [ id : 9 ].
+2021-03-12 17:13:06,517 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-4] User with [ id: 9 ] rendered from database successfully.
+2021-03-12 17:13:16,136 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-5] Request received to update user with [ id : 9 , name : Liyanage , email : liyanage123@gmail.com ]
+2021-03-12 17:13:16,218 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-5] User with [ id: 9 ] updated successfully.
+2021-03-12 17:13:21,939 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-6] Request received to delete user with [ id : 9 ].
+2021-03-12 17:13:22,002 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-6] User with [ id: 9 ] deleted successfully.
+2021-03-12 17:45:31,171 INFO org.springframework.boot.StartupInfoLogger [main] Starting UserregistryApplication using Java 15.0.2 on deepika-ThinkPad-T460 with PID 2980 (/home/deepika/Intellij_Projects/User.Registry/target/classes started by deepika in /home/deepika/Intellij_Projects/User.Registry)
+2021-03-12 17:45:31,174 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-12 17:45:31,175 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-12 17:45:33,253 INFO org.springframework.boot.StartupInfoLogger [main] Started UserregistryApplication in 2.695 seconds (JVM running for 4.28)
+2021-03-12 17:45:41,552 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-2] Request received to get all users
+2021-03-12 17:45:41,725 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-2] Users rendered from database successfully.
+2021-03-12 17:45:48,014 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-3] Request received to get user with [ id : 4 ].
+2021-03-12 17:45:48,074 INFO com.hms.user.registry.controller.UserController [http-nio-8080-exec-3] User with [ id: 4 ] rendered from database successfully.
